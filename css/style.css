@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    width: 100%;
+    height: 100px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background-image: linear-gradient(to top left, blue,rgb(0, 4, 255),rgb(0, 255, 200), rgb(1, 253, 135),rgb(3, 218, 57));
+}
+
+.title h1{
+    color: white;
+    position: relative;
+    top: 20%;
+    text-shadow: 1px 1px 8px rgba(27, 27, 27, 0.925);
+}
+
+.lista {
+    width: 100%;
+    max-width: 768px;
+    margin: 125px auto;
+    text-align: center;
+}
+
+.lista .lista-title{
+    width: 100%;
+    height: 50px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background-image: linear-gradient(to top left, blue,rgb(0, 4, 255),rgb(0, 255, 200), rgb(1, 253, 135),rgb(3, 218, 57));
+}
+
+.lista .lista-title h2{
+    color: white;
+    position: relative;
+    top: 20%;
+    text-shadow: 1px 1px 8px rgba(27, 27, 27, 0.925);
+}
+
+.lista .items-lista{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.lista .items-lista .items-lista-single{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    border-bottom: 2px solid rgb(175, 175, 175);
+    padding: 10px;
+}
+
+.lista .items-lista .items-lista-single div{
+    width: 50%;
+    display: inline-block;
+}
+
+.lista .items-lista .items-lista-single div h4{
+    font-weight: normal;
+    color: rgb(165, 165, 165);
+    font-size: 15pt;
+    text-shadow: 1px 1px 3px rgba(128, 128, 128, 0.863);
+    text-align: left;
+    padding-left: 10px;
+}
+
+.lista .items-lista .items-lista-single div input{
+    width: 25%;
+    padding: 3px 8px;
+    background-image: linear-gradient(to bottom left,rgb(0, 0, 184),rgb(1, 173, 44));
+    color: white;
+    text-shadow: 1px 1px 8px rgba(27, 27, 27, 0.925);
+    box-shadow: 1px 1px 5px rgba(27, 27, 27, 0.925);
+    cursor: pointer;
+}
+
+.lista .items-lista .items-lista-single div h2{
+    font-size: 15pt;
+    display: inline-block;
+    color: red;
+    cursor: pointer;
+    margin-left: 2px;
+    transition: 0.3s;
+}
+
+.lista  .items-lista .items-lista-single div h2:hover{
+    color: rgb(167, 3, 3);
+}
+
+.add-tarefas{
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(70, 70, 70, 0.822);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.add-tarefas h2{
+    margin-top: 3px;
+    font-weight: bolder;
+    font-size: 18pt;
+}
+
+.modalCriarTarefas{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(95, 95, 95, 0.281);
+    display: none;
+}
+
+.modalCriarTarefas .modalTarefas{
+    background-color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modalCriarTarefas .modalTarefas .criarTarefa{
+    width: 75%;
+    padding: 5px;
+    margin: 0 auto;
+}
+.modalCriarTarefas .modalTarefas  h2{
+    position: absolute;
+    top: -3.5%;
+    left: 100%;
+    cursor: pointer;
+}
+
+.modalCriarTarefas .modalTarefas .criarTarefa label{
+    margin-top: 10px;
+    font-size: 13pt;
+}
+
+.modalCriarTarefas .modalTarefas .criarTarefa input{
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.modalCriarTarefas .modalTarefas .criarTarefa textarea{
+    width: 100%;
+    height: 80px;
+    resize: none;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.modalCriarTarefas .modalTarefas .criarTarefa input[type=date]{
+    margin-bottom: 5px;
+}
+
+.modalCriarTarefas .modalTarefas .criarTarefa input[type=file]{
+    border: 1px solid rgb(75, 75, 75);
+}
+
+.modalCriarTarefas .modalTarefas .criarTarefa input[type=submit]{
+    background-image: linear-gradient(rgb(62, 62, 255),rgb(58, 255, 58));
+    color: white;
+    border: 0;
+    text-shadow: 1px 1px 8px rgba(27, 27, 27, 0.925);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.modalCriarTarefas .modalTarefas .criarTarefa input[type=submit]:hover{
+    background-image: linear-gradient(rgb(46, 46, 180),rgb(48, 202, 48));
+}
+
+.modalInfosTarefas{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(95, 95, 95, 0.281);
+    display: none;
+}
+
+.modalInfosTarefas .modalInfos{
+    background-color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modalInfosTarefas .modalInfos .infoTarefa{
+    width: 75%;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.modalInfosTarefas .modalInfos h2{
+    position: absolute;
+    top: -1%;
+    left: 100%;
+    cursor: pointer;
+}
+
+.modalInfosTarefas .modalInfos .infoTarefa h3{
+    margin: 2px 0;
+    font-size: 13pt;
+}
+
+.modalInfosTarefas .modalInfos .infoTarefa p{
+    background-color: rgba(180, 180, 180, 0.678);
+    padding: 5px;
+    margin-top: 3px;
+    font-size: 10pt;
+}
+
+.modalInfosTarefas .modalInfos .infoTarefa img{
+    width: 100%;
+    border: 1px solid rgba(156, 156, 156, 0.897);
+    max-width: 100%;
+    height: 400px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+@media screen and (max-width:768px) {
+    .add-tarefas{
+        position: absolute;
+        left: 92%;
+    }
+
+    .modalInfosTarefas .modalInfos .infoTarefa img{
+        width: 100%;
+        border: 1px solid rgba(156, 156, 156, 0.897);
+        height: auto;
+        text-align: center;
+        margin: 10px auto;
+    }
+}

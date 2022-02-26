@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista De Tarefas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Lista de Tarefas</h1>
+    </div>
+    <div class="lista">
+        <div class="lista-title">
+            <h2>Tarefas</h2>
+        </div>
+        <div class="items-lista"></div>
+    </div>
+    <div class="add-tarefas">
+        <h2>+</h2>
+    </div>
+
+    <div class="modalCriarTarefas">
+        <div class="modalTarefas">
+            <h2 class="close-modal-tarefas"><i class="far fa-times-circle"></i></h2>
+            <div class="criarTarefa">
+                <form method="post" class="criarTarefaForm">
+                    <label for="title-tarefas">Nome: </label>
+                    <input type="text" name="tarefas-title" id="title-tarefas" placeholder="Insira o nome da Tarefa...">
+                    <label for="desc-tarefas">Descrição: </label>
+                    <textarea name="tarefas-desc" id="desc-tarefas" cols="30" rows="5" placeholder="Insira a descrição da tarefa..."></textarea>
+                    <label for="date-tarefas">Termino: </label>
+                    <input type="date" name="tarefas-date" id="date-tarefas">
+                    <label for="img-tarefas">Imagens (opcional): </label>
+                    <input type="file" name="tarefas-img" id="img-tarefas">
+                    <input type="submit" value="Cadastrar">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modalInfosTarefas">
+        <div class="modalInfos">
+            <h2 class="close-modal-tarefas"><i class="far fa-times-circle"></i></h2>
+            <div class="infoTarefa">
+                <h3>Nome: </h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <h3>Descrição: </h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore expedita quo fugit, explicabo rem porro dolor voluptate aliquid repellat numquam est deserunt consequuntur sint, eos, quia obcaecati sed nobis illo.</p>
+                <h3>Termino: </h3>
+                <p>13/02/22</p>
+                <h3>Imagem: </h3>
+                <img src="img/imgnaodisponivel.jpg" />
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/21ca97ef9d.js" crossorigin="anonymous"></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
